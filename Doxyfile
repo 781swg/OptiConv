@@ -1,0 +1,34 @@
+# --- Основная информация о проекте ---
+PROJECT_NAME           = "ImgProc-C"
+PROJECT_NUMBER         = 1.0
+PROJECT_BRIEF          = "Эффективная библиотека обработки изображений на языке Си"
+OUTPUT_DIRECTORY       = docs
+
+# --- Настройки языка ---
+# Включаем оптимизацию для проектов на Си
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+
+# --- Входные данные ---
+# Указываем папки, которые нужно сканировать
+INPUT                  = README.md include src
+# Рекурсивный поиск (заходить в подпапки)
+RECURSIVE              = YES
+# Использовать README.md как главную страницу документации
+USE_MDFILE_AS_MAINPAGE = README.md
+
+# --- Настройки вывода ---
+# Генерировать HTML (удобно смотреть в браузере)
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+
+# Отключаем генерацию LaTeX (обычно он не нужен, если вы не печатаете книгу)
+GENERATE_LATEX         = NO
+
+# --- Визуализация (нужен установленный Graphviz, если хотите графики) ---
+# Если Graphviz не установлен, поставьте NO
+HAVE_DOT               = NO
+
+# --- Кодировка ---
+INPUT_ENCODING         = UTF-8
